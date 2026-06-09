@@ -16,6 +16,12 @@ with **that user's own OAuth permissions**, never a service account.
 | 3 | **Live asset inventory queries** | Real data from Cloud Asset Inventory (with a per-service REST fallback), scoped to the signed-in user's IAM. |
 | 4 | **Confirmed command execution** | Executes a curated set of **non-destructive** operations with the user's token, behind a **3-layer confirmation**. Destructive operations are never executed. |
 
+## Demo
+
+[![GCP Genie demo](https://img.youtube.com/vi/qQNCawFOXzo/hqdefault.jpg)](https://youtu.be/qQNCawFOXzo)
+
+▶️ **[Watch the demo on YouTube](https://youtu.be/qQNCawFOXzo)**
+
 ## Architecture
 
 - **ADK agent** (`gcp_genie_agent/`): a root agent that coordinates a Google-Search
@@ -38,7 +44,7 @@ with **that user's own OAuth permissions**, never a service account.
    gcloud's bundled command tree for offline validation and uses your gcloud
    identity to register the agent.)
 3. **Python 3.10+**.
-4. **A Gemini Enterprise app** — note its **app id**.
+4. **A deployed Gemini Enterprise app** (created in advance) — note its **app id**.
 5. **An OAuth 2.0 Client ID** (see below) so the agent can act on behalf of users.
 
 ### Create the OAuth client (one-time)
