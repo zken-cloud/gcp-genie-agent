@@ -1,5 +1,7 @@
 # GCP Genie
 
+**English** | [简体中文](README.zh-CN.md)
+
 An [ADK](https://google.github.io/adk-docs/) agent that runs on **Vertex AI Agent
 Engine** and registers to a **Gemini Enterprise** app. It helps users work with
 Google Cloud in four ways — and every action that touches a user's cloud runs
