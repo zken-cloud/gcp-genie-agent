@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# Bundled at deploy time from the local Cloud SDK (Apache-2.0, not redistributed here)
+gcp_genie_agent/data/gcloud_completions.py
+
+# Local config / secrets — never commit
+.env
+*.env
+
+# Deploy artifacts / logs
+*.log
+*.pid
+agent_engine_resource.txt
